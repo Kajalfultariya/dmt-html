@@ -255,7 +255,7 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
         <Dialog
           open={BillPaySixopen}
           onClose={BillPaySixClose}
-          style={{ //marginTop: "100px" 
+          style={{ marginTop: "100px" 
           }}>
           <div style={{ margin: "15px", textAlign: "center", overflow: "hidden" }}>
             <DialogTitle>
