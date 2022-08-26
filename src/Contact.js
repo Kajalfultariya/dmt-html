@@ -5,25 +5,9 @@ import location from "./Image/location.png"
 import mail from "./Image/mail.png"
 import call from "./Image/call.png"
 import TextField from '@mui/material/TextField';
-import { Label } from '@mui/icons-material';
 import { Button } from '@mui/material';
 
-//import Stack from '@mui/material/Stack';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        '& > *': {
-            //margin: theme.spacing(1),
-            // width: theme.spacing(16),
-            //  height: theme.spacing(16),
-        },
-    },
-}));
-
 const Contact = () => {
-    const classes = useStyles();
 
     return (
         <section id="Contact">
@@ -62,17 +46,23 @@ const Contact = () => {
                             width: "85%",
 
                         }}>
-                            <p style={{ fontSize: "35px", marginTop: "10px", fontWeight: "bold" }}>
+                            <p style={{
+                                fontSize: "35px",
+                                marginTop: "10px",
+                                fontWeight: "bold"
+                            }}>
                                 CONTACT US
                             </p>
-                            <div style={{ width: "80%", marginTop: "2px" }}>
+                            <div style={{
+                                width: "80%",
+                                marginTop: "2px"
+                            }}>
                                 <div style={{
                                     display: "flex",
                                     justifyContent: "space-between",
                                     width: "100%"
                                 }}>
                                     <div style={{
-
                                         marginTop: "30px",
                                         backgroundColor: "rgb(1, 61, 129)",
                                         height: "40px",
@@ -106,9 +96,7 @@ const Contact = () => {
                                     width: "92%"
                                 }}>
                                     <div style={{
-
                                         marginTop: "20px",
-
                                         backgroundColor: "rgb(1, 61, 129)",
                                         height: "40px",
                                         width: "40px"
@@ -127,20 +115,15 @@ const Contact = () => {
                                         <p>
                                             info@oceanmtech.com
                                         </p>
-
-
                                     </div>
                                 </div>
                                 <div style={{
                                     display: "flex",
                                     justifyContent: "space-between",
                                     width: "78%",
-
                                 }}>
                                     <div style={{
-
                                         marginTop: "25px",
-
                                         backgroundColor: "rgb(1, 61, 129)",
                                         height: "40px",
                                         width: "40px"
@@ -148,7 +131,9 @@ const Contact = () => {
                                         <img src={call}
                                             height="40px"
                                             width="40px"
-                                            style={{ backgroundColor: "rgb(1, 61, 129)" }}
+                                            style={{
+                                                backgroundColor: "rgb(1, 61, 129)"
+                                            }}
                                         />
                                     </div>
                                     <div style={{
@@ -204,8 +189,6 @@ const Contact = () => {
                                 }}>
                                     Send a Message
                                 </p><br />
-
-
 
                                 <TextField
                                     id="standard-number"
@@ -295,13 +278,14 @@ const Contact = () => {
                                         width: "120px",
                                         height: "50px",
                                         marginTop: "30px",
-                                        backgroundColor:"rgb(1, 61, 129)"
-                                    }}>SEND</Button>
+                                        backgroundColor: "rgb(1, 61, 129)"
+                                    }}>
+                                    SEND
+                                </Button>
                             </div>
                         </Stack>
                     </div>
                 </div>
-
             </div>
         </section >
     )

@@ -7,60 +7,7 @@ import post from "./Image/post.png"
 import schedule from "./Image/schedule.png"
 import back from "./Image/back.png"
 import web from "./Image/web.png"
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
 
-
-const itemData = [
-    {
-        img: 'https://images.unsplash.com/photo-1549388604-817d15aa0110',
-        title: 'Bed',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1563298723-dcfebaa392e3',
-        title: 'Kitchen',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
-        title: 'Sink',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1525097487452-6278ff080c31',
-        title: 'Books',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
-        title: 'Chairs',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62',
-        title: 'Candle',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1530731141654-5993c3016c77',
-        title: 'Laptop',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61',
-        title: 'Doors',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7',
-        title: 'Coffee',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee',
-        title: 'Storage',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
-        title: 'Coffee table',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1588436706487-9d55d73a39e3',
-        title: 'Blinds',
-    },
-];
 
 const Home = () => {
     return (
@@ -106,22 +53,41 @@ const Home = () => {
                             marginLeft: "100px"
 
                         }}>
-                            <p style={{ fontSize: "55px", marginTop: "100px", fontWeight: "bold" }}>
+                            <p style={{
+                                fontSize: "55px",
+                                marginTop: "100px",
+                                fontWeight: "bold"
+                            }}>
                                 More Than 100,000+
                             </p>
-                            <p style={{ fontSize: "47px", marginTop: "30px" }}>
+                            <p style={{
+                                fontSize: "47px",
+                                marginTop: "30px"
+                            }}>
                                 Creative Marketing
                             </p>
-                            <p style={{ fontSize: "47px", marginTop: "30px" }}>
+                            <p style={{
+                                fontSize: "47px",
+                                marginTop: "30px"
+                            }}>
                                 Images
                             </p>
-                            <p style={{ fontSize: "22px", marginTop: "60px" }}>
+                            <p style={{
+                                fontSize: "22px",
+                                marginTop: "60px"
+                            }}>
                                 Whether You have a small and medium business,
                             </p>
-                            <p style={{ fontSize: "22px", marginTop: "10px" }}>
+                            <p style={{
+                                fontSize: "22px",
+                                marginTop: "10px"
+                            }}>
                                 get all required marketing stuff in a few clicks.
                             </p>
-                            <p style={{ fontSize: "22px", marginTop: "10px" }}>
+                            <p style={{
+                                fontSize: "22px",
+                                marginTop: "10px"
+                            }}>
                                 Easiest way to promote your business
                             </p>
                             <button variant="filled" style={{
@@ -145,17 +111,17 @@ const Home = () => {
                             textAlign: "center",
                             marginTop: "40px",
                             marginRight: "30px",
-                          
-                          //   rotate:"30deg",
-                            
-                          
-                          
-                          // writingMode: "vertical-rl",  /* `vertical-rl` and a rotation will achieve the same effect */
+
+                            //   rotate:"30deg",
+
+
+
+                            // writingMode: "vertical-rl",  /* `vertical-rl` and a rotation will achieve the same effect */
                             //  transform: "scaleX(-1) scaleY(-1)",
                             //    position:"absolute"
-                       //     display:"-webkit-inline-flex",
-                       //     float:"none"
-                           // visibility:"hidden"
+                            //     display:"-webkit-inline-flex",
+                            //     float:"none"
+                            // visibility:"hidden"
                             //  position:"sticky",
                             //  overflow:"auto",
                             // transform: "rotateZ(30deg)",
@@ -176,147 +142,77 @@ const Home = () => {
                                         margin: "50px",
                                         height: "100%",
                                         paddingTop: "10px",
-                                      //  webkitTransform: " rotate(-10deg)",
-                                     //   mozTransform: "rotate(10deg)",
-                                      //  msTransform: "rotate(10deg)",
-                                      //  oTransform: "rotate(10deg)",
-                                      //  transform: "rotate(10deg)",
-                                      //  position: "absolute",
-                                       // zIndex: "-1"
+                                        //  webkitTransform: " rotate(-10deg)",
+                                        //   mozTransform: "rotate(10deg)",
+                                        //  msTransform: "rotate(10deg)",
+                                        //  oTransform: "rotate(10deg)",
+                                        //  transform: "rotate(10deg)",
+                                        //  position: "absolute",
+                                        // zIndex: "-1"
                                     }}
                                 >
                                     <div>
-                                        <div style={{
+                                        <div className='home-imagegroup'
+                                            style={{
+                                                backgroundImage: "url(" + web + ")",
+                                                marginTop: "50px"
+                                            }} />
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
-
-                                            marginTop: "50px"
-                                        }} />
-                                        <div style={{
-                                            backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
                                     </div>
                                     <div>
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%"
+
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
                                     </div>
                                     <div >
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
-
                                             marginTop: "50px"
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
 
                                     </div>
                                     <div>
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%"
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
-                                        <div style={{
+                                        <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            height: "90px",
-                                            width: "90px",
-                                            backgroundSize: "100% 100%",
-                                            backgroundRepeat: "no-repeat",
-                                            borderRadius: "10%",
                                             marginTop: "10px"
                                         }} />
                                     </div>
@@ -361,7 +257,9 @@ const Home = () => {
                         }} >
                             Post Download</p>
                     </div>
-                    <div style={{ textAlign: "center" }}>
+                    <div style={{
+                        textAlign: "center"
+                    }}>
                         <p style={{
                             fontSize: "45px",
                             fontWeight: "bold"
@@ -371,7 +269,8 @@ const Home = () => {
                         <p style={{
                             fontSize: "20px"
                         }} >
-                            Creative option</p>
+                            Creative option
+                        </p>
                     </div>
                 </div>
             </div >

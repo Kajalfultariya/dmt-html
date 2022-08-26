@@ -161,15 +161,11 @@ const Feature = () => {
 
                         </div>
                     </div>
-
-
-
                     <div>
-                        <img src={mobile} height="70%" width="300px" />
+                        <img src={mobile}
+                            height="70%"
+                            width="300px" />
                     </div>
-
-
-
                     <div style={{
                         width: "450px",
                         textAlign: "left",

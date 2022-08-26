@@ -5,17 +5,13 @@ import Progress from './Progress';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
-import Feature from './Feature';
-
 
 const App = () => {
   return (
     <div>
       <Header />
-
       <Home />
       <Progress />
-     
       <About />
       <Contact />
       <Footer />

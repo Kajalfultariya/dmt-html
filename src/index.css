@@ -23,11 +23,11 @@ body {
 }
 
 header {
-    position:fixed;
- 
+    position: fixed;
+
     top: 0;
     height: 90px;
-    background-color:rgb(1, 61, 129);
+    background-color: rgb(1, 61, 129);
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -80,7 +80,7 @@ nav {
     height: 1000px;
     top: 90px;
     color: white;
-    width:100%;
+    width: 100%;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
@@ -88,20 +88,34 @@ nav {
     box-shadow: 5px 5px 5px 5px rgb(1, 61, 129);
 }
 
+.otpinput {
+    border: 2px solid #dddddd;
+    height: 60px;
+    width: 60px
+}
+
+.home-imagegroup {
+    height: 90px;
+    width: 90px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+
+}
 
 
 #wrapper {
     width: 680px;
-    display:table;
+    display: table;
     margin: auto;
-  }
-  
-  #wrapper > div {
+}
+
+#wrapper>div {
     display: inline-block;
-  }
-  
-  .circle {
-    position:relative;
+}
+
+.circle {
+    position: relative;
     padding: 20px;
     width: 120px;
     height: 120px;
@@ -109,13 +123,13 @@ nav {
     background-color: #eee;
     border: solid 1px #ddd;
     z-index: 999;
-    
-    
-  }
 
-  .line-top {
+
+}
+
+.line-top {
     width: 120px;
-    height:60px;
+    height: 60px;
     z-index: -1;
     background: transparent;
     border: none;
@@ -123,11 +137,11 @@ nav {
     padding: 40px 40px;
     border-radius: 50%;
     margin: 20px -50px 0;
-  }
-  
-  .line-bottom {
+}
+
+.line-bottom {
     width: 120px;
-    height:60px;
+    height: 60px;
     z-index: -1;
     background: transparent;
     border: none;
@@ -135,7 +149,8 @@ nav {
     padding: 40px 40px;
     border-radius: 0 0 50% 50%;
     margin: 0 -65px;
-  }
+}
+
 #Progress {
     background-color: white;
     height: 500px;
@@ -232,28 +247,28 @@ nav {
     width: 100%;
     height: 250px;
     grid-template-areas: "head head head "
-                         "nav main main main"
-                         "nav nav main main"
-                         "nav nav main main"
-                         "nav main main main";
+        "nav main main main"
+        "nav nav main main"
+        "nav nav main main"
+        "nav main main main";
     grid-template-rows: 50px 1fr 30px;
     grid-template-columns: 150px 1fr;
-  }
-  
-  
-  
-  #page > nav {
+}
+
+
+
+#page>nav {
     grid-area: nav;
     background-color: #ffa08c;
-  }
-  
-  #page > main {
+}
+
+#page>main {
     grid-area: main;
     background-color: #ffff64;
-  }
-  
- 
-  
+}
+
+
+
 
 /*article {
     display: grid;
