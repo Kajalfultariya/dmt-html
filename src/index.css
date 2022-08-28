@@ -24,7 +24,7 @@ body {
 
 header {
     position: fixed;
-
+    z-index: 999;
     top: 0;
     height: 90px;
     background-color: rgb(1, 61, 129);
@@ -89,66 +89,23 @@ nav {
 }
 
 .otpinput {
-    border: 2px solid #dddddd;
-    height: 60px;
-    width: 60px
+    border: 2px solid rgb(1, 61, 129);
+    border-radius: 10%;
+    height: 55px;
+    width: 55px;
+    
+    font-size: 25px;    
+    color:rgb(1, 61, 129);
+    text-align: center;
 }
 
 .home-imagegroup {
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: 100px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 10%;
 
-}
-
-
-#wrapper {
-    width: 680px;
-    display: table;
-    margin: auto;
-}
-
-#wrapper>div {
-    display: inline-block;
-}
-
-.circle {
-    position: relative;
-    padding: 20px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #eee;
-    border: solid 1px #ddd;
-    z-index: 999;
-
-
-}
-
-.line-top {
-    width: 120px;
-    height: 60px;
-    z-index: -1;
-    background: transparent;
-    border: none;
-    border-top: dashed 2px orange;
-    padding: 40px 40px;
-    border-radius: 50%;
-    margin: 20px -50px 0;
-}
-
-.line-bottom {
-    width: 120px;
-    height: 60px;
-    z-index: -1;
-    background: transparent;
-    border: none;
-    border-bottom: dashed 2px orange;
-    padding: 40px 40px;
-    border-radius: 0 0 50% 50%;
-    margin: 0 -65px;
 }
 
 #Progress {
@@ -163,6 +120,7 @@ nav {
     align-items: center;
     box-shadow: 5px 5px 5px 5px rgb(1, 61, 129);
 }
+
 
 #Feature {
     background-color: white;
@@ -230,9 +188,30 @@ nav {
 
 }
 
+.payment-last{
+       
+    width: 280px;
+    border-radius: 15%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.payment-detail{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px 10px;
+    outline: none;
+    width: 100%
+}
 #Contact {
     background-color: white;
-    height: 520px;
+    height: 600px;
     width: 100%;
     top: 4100px;
     display: flex;

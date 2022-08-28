@@ -1,52 +1,40 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import login from "./Image/login.png"
 import image from "./Image/image.png"
 import download from "./Image/download.png"
 import Feature from './Feature';
+import Arrow, { DIRECTION } from 'react-arrows'
 
 const Projects = () => {
-  const d1 = useRef();
-  const d2 = useRef();
 
- 
-  const getOffset = (el) => {
-    const rect = el.getBoundingClientRect();
-    return {
-      left: rect.left + window.pageXOffset,
-      top: rect.top + window.pageYOffset,
-      width: rect.width || el.offsetWidth,
-      height: rect.height || el.offsetHeight
-    };
-  }
 
-  const connect = (div1, div2, color, thickness) => {
-    const off1 = getOffset(div1);
-    const off2 = getOffset(div2);
+  var p1x = parseFloat(1);
+  var p1y = parseFloat(70);
+  var p2x = parseFloat(180);
+  var p2y = parseFloat(140);
+  var mpx = (p2x + p1x) * 0.5;
+  var mpy = (p2y + p1y) * 0.5;
+  var theta = Math.atan2(p2y - p1y, p2x - p1x) - Math.PI / 2;
+  var offset = -70;
+  var c1x = mpx + offset * Math.cos(theta);
+  var c1y = mpy + offset * Math.sin(theta);
+  const curve = "M" + p1x + " " + p1y + " Q " + c1x + " " + c1y + " " + p2x + " " + p2y;
 
-    const x1 = off1.left + off1.width;
-    const y1 = off1.top + off1.height;
 
-    const x2 = off2.left + off2.width;
-    const y2 = off2.top;
+  var p1x1 = parseFloat(2);
+  var p1y1 = parseFloat(130);
+  var p2x1 = parseFloat(180);
+  var p2y1 = parseFloat(70);
+  var mpx1 = (p2x1 + p1x1) * 0.5;
+  var mpy1 = (p2y1 + p1y1) * 0.5;
+  var theta1 = Math.atan2(p2y1 - p1y1, p2x1 - p1x1) - Math.PI / 2;
+  var offset1 = 80;
+  var c1x1 = mpx1 + offset1 * Math.cos(theta1);
+  var c1y1 = mpy1 + offset1 * Math.sin(theta1);
+  const curve1 = "M" + p1x1 + " " + p1y1 + " Q " + c1x1 + " " + c1y1 + " " + p2x1 + " " + p2y1;
 
-    const length = Math.sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
-
-    const cx = ((x1 + x2) / 2) - (length / 2);
-    const cy = ((y1 + y2) / 2) - (thickness / 2);
-
-    const angle = Math.atan2((y1 - y2), (x1 - x2)) * (60 / Math.PI);
-
-    const htmlLine = "<div style='padding:0px; margin:0px; height:" + thickness + "px; background-color:" + color + "; line-height:1px; position:absolute; left:" + cx + "px; top:" + cy + "px; width:" + length + "px; -moz-transform:rotate(" + angle + "deg); -webkit-transform:rotate(" + angle + "deg); -o-transform:rotate(" + angle + "deg); -ms-transform:rotate(" + angle + "deg); transform:rotate(" + angle + "deg);' />";
-
-    document.body.innerHTML += htmlLine;
-  
-  }
- // const d1 = document.getElementById('d1')
-//  const d2 = document.getElementById('d2')
-
- 
 
   return (
     <>
@@ -71,53 +59,6 @@ const Projects = () => {
               OUR WORK PROGRESS
             </p>
           </div>
-
-          {/* <div  style={{display:"inline-block"}}>
-            
-            <div style={{height:"100px" ,width:"100px",backgroundColor:"black"}}></div>
-            <div   style={{
-              width: "120px",
-              height: "60px",
-              zIndex: "-1",
-              background: "transparent",
-              border: "none",
-              borderBottom: "dashed 2px orange",
-              padding: "40px 40px",
-              borderRadius: "50%",
-              margin: "20px -50px 0",
-
-            }}></div>
-            <div style={{height:"100px" ,width:"100px",backgroundColor:"black",paddingTop:"50px"}}
-          ></div>
-            <div   style={{
-              width: "120px",
-              height: "60px",
-              zIndex: "-1",
-              background: "transparent",
-              border: "none",
-              borderTop: "dashed 2px orange",
-              padding: "40px 40px",
-              borderRadius: "50%",
-              margin: "20px -50px 0",
-
-            }}></div>
-            <div style={{height:"100px" ,width:"100px",backgroundColor:"black"}}></div>
-          </div>
-          */}
-      {/*}    <div ref={d1} style={{ width: "20px", position: "absolute", top: "150px", left: "150px" }}>
-            foo
-          </div>
-
-          <div ref={d2} style={{ width: "20px", position: "absolute", top: "300px", left: "300px" }}>
-            bar
-          </div>
-
-          {
-             d1.current ?
-             connect(d1.current, d2.current, 'pink', 5) : ""
-          
-          }
-        */}
           <div style={{
             width: "98%",
             marginTop: "30px"
@@ -134,6 +75,7 @@ const Projects = () => {
             >
               <div style={{
                 width: "260px", textAlign: "center",
+
               }}>
                 <center>
                   <div style={{
@@ -141,9 +83,9 @@ const Projects = () => {
                     width: "120px",
                     backgroundColor: "rgb(1, 61, 129)",
                     borderRadius: "20%",
-
+                    boxShadow: "1px 5px 20px  rgb(1, 61, 129)"
                   }}>
-                    <img src={login}
+                    <img id="from" src={login}
                       height="90px"
                       width="90px"
                       style={{ marginTop: "10px" }}
@@ -173,6 +115,19 @@ const Projects = () => {
                 </p>
 
               </div>
+              <div style={{ width: "10px", marginLeft: "-100px" }}>
+                <svg  >
+                  <path id="curve"
+                    d={curve}
+                    stroke="rgba(2, 79, 167, 0.538)"
+                    stroke-width="3"
+                    stroke-linecap="butt"
+                    stroke-linejoin="round"
+                    stroke-dasharray="10,10"
+                    fill="none"
+                  ></path>
+                </svg>
+              </div>
 
               <div style={{
                 width: "380px",
@@ -180,18 +135,23 @@ const Projects = () => {
                 marginTop: "80px",
                 marginBottom: "20px"
               }}>
-                <center>
-                  <div style={{
-                    height: "110px",
-                    width: "120px",
-                    backgroundColor: "rgb(1, 61, 129)",
-                    borderRadius: "20%",
 
-                  }}>
+                <center>
+                  <div
+
+                    style={{
+                      height: "110px",
+                      width: "120px",
+                      backgroundColor: "rgb(1, 61, 129)",
+                      borderRadius: "20%",
+                      boxShadow: "1px 5px 20px  rgb(1, 61, 129)"
+                    }}>
                     <img src={image}
                       height="90px"
                       width="90px"
-                      style={{ marginTop: "10px" }}
+                      style={{
+                        marginTop: "10px",
+                      }}
                     >
                     </img>
                   </div>
@@ -219,6 +179,20 @@ const Projects = () => {
 
               </div>
 
+
+              <div style={{ width: "10px", marginLeft: "-150px", marginRight: "40px" }}>
+                <svg  >
+                  <path id="curve"
+                    d={curve1}
+                    stroke="rgba(2, 79, 167, 0.538)"
+                    stroke-width="3"
+                    stroke-linecap="butt"
+                    stroke-linejoin="round"
+                    stroke-dasharray="10,10"
+                    fill="none"
+                  ></path>
+                </svg>
+              </div>
               <div style={{
                 width: "280px",
                 textAlign: "center"
@@ -229,7 +203,7 @@ const Projects = () => {
                     width: "120px",
                     backgroundColor: "rgb(1, 61, 129)",
                     borderRadius: "20%",
-
+                    boxShadow: "1px 5px 20px  rgb(1, 61, 129)"
                   }}>
                     <img src={download}
                       height="90px"

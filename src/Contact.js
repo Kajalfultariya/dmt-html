@@ -1,6 +1,5 @@
 import React from 'react';
 import Stack from '@mui/material/Stack';
-import { makeStyles } from '@material-ui/core/styles';
 import location from "./Image/location.png"
 import mail from "./Image/mail.png"
 import call from "./Image/call.png"
@@ -15,17 +14,11 @@ const Contact = () => {
                 width: "100%",
                 display: "flex",
                 height: "100%",
-                //  position: "relative"
-                //    position:"fixed"
             }}>
                 <div style={{
-                    //overflow: "hidden",
-                    //position: "relative",
                     height: "98%",
                     width: "100%",
                     display: "flex",
-                    //  justifyContent: "center",
-                    //  alignItems: "center",
                     margin: "50px"
                 }}>
 
@@ -36,9 +29,8 @@ const Contact = () => {
                         top: "0px",
                         left: "0px",
                         backgroundColor: "rgb(1, 61, 129)",
-                        //    overflow: "hidden",
                         position: "relative",
-                        marginTop: "6%",
+                        marginTop: "7.2%",
                         color: "white"
                     }}>
                         <div style={{
@@ -54,8 +46,9 @@ const Contact = () => {
                                 CONTACT US
                             </p>
                             <div style={{
-                                width: "80%",
-                                marginTop: "2px"
+                                width: "83%",
+                                marginTop: "25px",
+
                             }}>
                                 <div style={{
                                     display: "flex",
@@ -63,7 +56,7 @@ const Contact = () => {
                                     width: "100%"
                                 }}>
                                     <div style={{
-                                        marginTop: "30px",
+                                        marginTop: "25px",
                                         backgroundColor: "rgb(1, 61, 129)",
                                         height: "40px",
                                         width: "40px"
@@ -123,7 +116,7 @@ const Contact = () => {
                                     width: "78%",
                                 }}>
                                     <div style={{
-                                        marginTop: "25px",
+                                        marginTop: "40px",
                                         backgroundColor: "rgb(1, 61, 129)",
                                         height: "40px",
                                         width: "40px"
@@ -138,7 +131,7 @@ const Contact = () => {
                                     </div>
                                     <div style={{
                                         fontSize: "20px",
-                                        marginTop: "35px",
+                                        marginTop: "45px",
 
                                     }}>
                                         <p>
@@ -180,15 +173,17 @@ const Contact = () => {
                             <div style={{
                                 width: "90%",
                                 height: "100%",
-                                padding: "15px",
+                                marginLeft: "30px",
+
                                 color: "rgb(1, 61, 129)"
                             }}>
                                 <p style={{
                                     fontSize: "35px",
-                                    fontWeight: "bold"
+                                    fontWeight: "bold",
+                                    marginTop: "55px",
                                 }}>
                                     Send a Message
-                                </p><br />
+                                </p>
 
                                 <TextField
                                     id="standard-number"
@@ -202,7 +197,11 @@ const Contact = () => {
                                         },
                                     }}
                                     // autoFocus
-                                    style={{ width: "45%", marginRight: "30px" }}
+                                    style={{
+                                        width: "45%",
+                                        marginRight: "30px",
+                                        marginTop: "33px"
+                                    }}
                                     variant="standard"
                                 />
                                 <TextField
@@ -217,7 +216,10 @@ const Contact = () => {
                                         },
                                     }}
                                     //autoFocus
-                                    style={{ width: "45%" }}
+                                    style={{
+                                        width: "45%",
+                                        marginTop: "33px"
+                                    }}
                                     variant="standard"
                                 />
                                 <div style={{ marginTop: "40px" }}>
@@ -277,7 +279,7 @@ const Contact = () => {
                                     style={{
                                         width: "120px",
                                         height: "50px",
-                                        marginTop: "30px",
+                                        marginTop: "45px",
                                         backgroundColor: "rgb(1, 61, 129)"
                                     }}>
                                     SEND

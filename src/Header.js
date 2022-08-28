@@ -58,7 +58,7 @@ const Header = () => {
                             width: "170px",
                             marginTop: "14px",
                             marginLeft: "10px",
-                            borderRadius: "20%",
+                           // borderRadius: "20%",
                             color: "whitesmoke"
                         }}>
                             <Button variant="outlined"
@@ -68,6 +68,7 @@ const Header = () => {
                                     border: "solid",
                                     fontFamily: "sans-serif",
                                     fontSize: "0.8rem",
+                                   // borderRadius:"20%"
                                 }}>
                                 <img src={call} height="20px" width="20px"></img> +91 910 690 2181
                             </Button>

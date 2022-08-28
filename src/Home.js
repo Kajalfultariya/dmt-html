@@ -1,13 +1,8 @@
 import React from 'react';
 import Stack from '@mui/material/Stack';
-import { Button } from '@mui/material';
-import business from "./Image/business.png"
-import card from "./Image/card.png"
-import post from "./Image/post.png"
-import schedule from "./Image/schedule.png"
 import back from "./Image/back.png"
 import web from "./Image/web.png"
-
+import { Button } from '@mui/material';
 
 const Home = () => {
     return (
@@ -23,10 +18,10 @@ const Home = () => {
                 <div style={{
                     width: "100%",
                     height: "75%",
+                    // backgroundColor:"red",
                     backgroundImage: "url(" + back + ")",
                     backgroundSize: "100% 100%",
                     backgroundRepeat: "no-repeat",
-                    //backgroundColor: "rgb(1, 61, 129)",
                     color: "white",
 
                 }}>
@@ -41,14 +36,11 @@ const Home = () => {
                             marginTop: "30px",
                             height: "100%",
                             paddingTop: "10px",
-                            //position:"static"
                         }}
                     >
                         <div style={{
                             width: "50%",
                             height: "70%",
-                            //   display: "flex",
-                            //  justifyContent: "center",
                             textAlign: "left",
                             marginLeft: "100px"
 
@@ -80,28 +72,26 @@ const Home = () => {
                             </p>
                             <p style={{
                                 fontSize: "22px",
-                                marginTop: "10px"
+                                marginTop: "8px"
                             }}>
                                 get all required marketing stuff in a few clicks.
                             </p>
                             <p style={{
                                 fontSize: "22px",
-                                marginTop: "10px"
+                                marginTop: "8px"
                             }}>
                                 Easiest way to promote your business
                             </p>
-                            <button variant="filled" style={{
+                            <Button variant="contained" style={{
                                 backgroundColor: "white",
                                 color: "rgb(1, 61, 129)",
                                 marginTop: "50px",
                                 width: "300px",
                                 fontWeight: "bold",
                                 height: "55px",
-                                borderRadius: "10%"
-                                //  position: "fixed"
                             }}>
                                 download free post now
-                            </button>
+                            </Button>
                         </div>
                         <div style={{
                             width: "50%",
@@ -109,32 +99,16 @@ const Home = () => {
                             display: "flex",
                             justifyContent: "center",
                             textAlign: "center",
-                            marginTop: "40px",
-                            marginRight: "30px",
-
-                            //   rotate:"30deg",
-
-
-
-                            // writingMode: "vertical-rl",  /* `vertical-rl` and a rotation will achieve the same effect */
-                            //  transform: "scaleX(-1) scaleY(-1)",
-                            //    position:"absolute"
-                            //     display:"-webkit-inline-flex",
-                            //     float:"none"
-                            // visibility:"hidden"
-                            //  position:"sticky",
-                            //  overflow:"auto",
-                            // transform: "rotateZ(30deg)",
-                            //position:"static"
-                            // float:"left"
-                            //  webkitTransform: "rotate(30deg)",
+                            marginTop: "70px",
+                            //marginRight: "30px",
+                            rotate: "30deg",
 
                         }}>
                             <div style={{// position: "relative" 
                             }}>
                                 <Stack
                                     direction="row"
-                                    spacing={1}
+                                    spacing={0.9}
                                     style={{
                                         display: "flex",
                                         justifyContent: "space-evenly",
@@ -142,13 +116,6 @@ const Home = () => {
                                         margin: "50px",
                                         height: "100%",
                                         paddingTop: "10px",
-                                        //  webkitTransform: " rotate(-10deg)",
-                                        //   mozTransform: "rotate(10deg)",
-                                        //  msTransform: "rotate(10deg)",
-                                        //  oTransform: "rotate(10deg)",
-                                        //  transform: "rotate(10deg)",
-                                        //  position: "absolute",
-                                        // zIndex: "-1"
                                     }}
                                 >
                                     <div>
@@ -159,11 +126,11 @@ const Home = () => {
                                             }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                     </div>
                                     <div>
@@ -173,15 +140,15 @@ const Home = () => {
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                     </div>
                                     <div >
@@ -191,11 +158,11 @@ const Home = () => {
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
 
                                     </div>
@@ -205,15 +172,15 @@ const Home = () => {
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                         <div className='home-imagegroup' style={{
                                             backgroundImage: "url(" + web + ")",
-                                            marginTop: "10px"
+                                            marginTop: "8px"
                                         }} />
                                     </div>
                                 </Stack>

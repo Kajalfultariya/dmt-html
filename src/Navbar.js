@@ -162,7 +162,7 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
 
 
       <Dialog open={open} onClose={handleClose} style={{ marginTop: "100px" }}>
-        <div style={{ margin: "15px" }}>
+        <div style={{ margin: "5px", width: "500px" }}>
           <DialogTitle>
             <p style={{
               fontSize: "30px",
@@ -188,6 +188,7 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               variant="outlined"
               name="Batch"
               type="text"
+              autoFocus
               //  value={number || ""}
               //  onChange={(e) => setNumber(e.target.value)}
               //  className="form-control w-75"
@@ -195,7 +196,7 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               style={{
                 padding: 10,
                 height: "70px",
-                width: "500px",
+                width: "450px",
                 marginTop: "5px",
                 fontSize: "20px",
                 color: "rgb(1, 61, 129)",
@@ -216,7 +217,7 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
                   />
                   <select
                     disable="true"
-                    Value="dfgdfgfdgdf"
+                    //  Value="dfgdfgfdgdf"
                     style={{
                       width: "90px",
                       color: "rgb(1, 61, 129)",
@@ -257,8 +258,8 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               justifyContent: "left",
               height: "70px",
               width: "600px",
-              marginTop: "30px",
-              marginLeft: "30px"
+              //marginTop: "10px",
+              marginLeft: "10px"
             }}>
               <Button
                 onClick={() => {
@@ -268,8 +269,9 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
                 }}
                 variant="contained"
                 style={{
-                  height: "50px",
-                  width: "120px"
+                  height: "40px",
+                  width: "120px",
+                  backgroundColor: "rgb(1, 61, 129)"
                 }}
               >
                 send otp
@@ -301,9 +303,10 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
           marginTop: "100px"
         }}>
         <div style={{
-          margin: "15px",
+          margin: "5px",
           textAlign: "center",
-          overflow: "hidden"
+          overflow: "hidden",
+          width: "500px"
         }}>
           <DialogTitle>
             <p style={{
@@ -338,46 +341,49 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
 
             <Stack
               direction="row"
-              spacing={2}
+              spacing={1.5}
               style={{
-                width: "500px",
+                width: "450px",
                 display: "flex",
                 justifyContent: "center"
               }}>
               <input
+                autoFocus
                 type='text'
+               // maxLength={1}
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+             //   autoFocus
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
             </Stack>
 
           </DialogContent>
-          <DialogActions style={{
-            width: "500px",
-            display: "flex",
-            justifyContent: "center",
-            marginLeft: "22px"
-          }}>
-
+         
             <Button
               onClick={() => {
                 HandleOtp1SetClose()
@@ -386,14 +392,15 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               variant="contained"
               style={{
                 height: "50px",
-                width: "91%",
+               
+                width: "390px",
                 backgroundColor: "rgb(1, 61, 129)"
               }}
             >
               submit
             </Button>
 
-          </DialogActions>
+        
           <div style={{ marginTop: "20px", marginBottom: "30px" }}>
             <p style={{
               fontFamily: "sans-serif",
@@ -419,8 +426,10 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
         }}>
         <div
           style={{
+          //  margin:"5px",
             textAlign: "center",
-            overflow: "hidden"
+            overflow: "hidden",
+            width:"470px"
           }}>
           <DialogTitle>
             <p style={{
@@ -448,48 +457,50 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
                 Enter 6 digit code
               </p>
             </DialogContentText>
-
+<center>
             <Stack
               direction="row"
-              spacing={2}
+              spacing={1.5}
               style={{
-                width: "500px",
+                width: "400px",
                 display: "flex",
                 justifyContent: "center"
               }}>
               <input
                 type='text'
+                autoFocus
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
             </Stack>
-
+            </center>
           </DialogContent>
-          <DialogActions style={{
-            width: "500px",
-            display: "flex",
-            justifyContent: "center",
-            marginLeft: "22px"
-          }}>
+        
 
             <Button
               onClick={() => {
@@ -500,15 +511,15 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               variant="contained"
               style={{
                 height: "50px",
-                width: "91%",
+               
+                width: "400px",
                 backgroundColor: "rgb(1, 61, 129)"
               }}
             >
               submit
             </Button>
 
-          </DialogActions>
-          <div style={{ marginTop: "2px", marginBottom: "10px" }}>
+          <div style={{ marginTop: "5px", marginBottom: "10px" }}>
             <p style={{
               fontFamily: "sans-serif",
               fontSize: "1.1rem",
@@ -532,9 +543,10 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
           marginTop: "100px"
         }}>
         <div style={{
-          margin: "15px",
+          margin: "5px",
           textAlign: "center",
-          overflow: "hidden"
+          overflow: "hidden",
+          width:"500px"
         }}>
           <DialogTitle>
             <p style={{
@@ -563,9 +575,9 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
 
             <Stack
               direction="row"
-              spacing={2}
+              spacing={1.5}
               style={{
-                width: "500px",
+                width: "450px",
                 display: "flex",
                 justifyContent: "center"
               }}>
@@ -581,19 +593,24 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
                 ENTER YOUR PIN
               </p>
               <input
+              autoFocus
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
 
@@ -601,10 +618,10 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
 
             <Stack
               direction="row"
-              spacing={2}
+              spacing={1.5}
               style={{
                 marginTop: "20px",
-                width: "500px",
+                width: "450px",
                 display: "flex",
                 justifyContent: "center"
               }}>
@@ -620,30 +637,29 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               </p>
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
 
             </Stack>
 
           </DialogContent>
-          <DialogActions style={{
-            width: "500px",
-            display: "flex",
-            justifyContent: "center",
-            marginLeft: "22px"
-          }}>
+         
 
             <Button
               onClick={() => {
@@ -653,14 +669,15 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               variant="contained"
               style={{
                 height: "50px",
-                width: "91%",
+                width: "450px",
+              marginBottom:"20px",
                 backgroundColor: "rgb(1, 61, 129)"
               }}
             >
               Save
             </Button>
 
-          </DialogActions>
+      
         </div>
       </Dialog>
 
@@ -672,9 +689,10 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
           marginTop: "100px"
         }}>
         <div style={{
-          margin: "15px",
+          //margin: "5px",
           textAlign: "center",
-          overflow: "hidden"
+          overflow: "hidden",
+          width:"420px"
         }}>
           <DialogTitle>
             <p style={{
@@ -703,27 +721,33 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
 
             <Stack
               direction="row"
-              spacing={2}
+              spacing={1.7}
               style={{
-                width: "500px",
+                width: "370px",
                 display: "flex",
-                justifyContent: "center"
+                justifyContent: "center",
+                
               }}>
 
               <input
+              autoFocus
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
               <input
                 type='text'
+                 maxLength={1}
                 className='otpinput'
               />
 
@@ -731,12 +755,7 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
 
 
           </DialogContent>
-          <DialogActions style={{
-            width: "500px",
-            display: "flex",
-            justifyContent: "center",
-            marginLeft: "22px"
-          }}>
+        
 
             <Button
               onClick={() => {
@@ -746,15 +765,15 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               variant="contained"
               style={{
                 height: "50px",
-                width: "91%",
+               
+                width: "280px",
                 backgroundColor: "rgb(1, 61, 129)"
               }}
             >
               submit
             </Button>
 
-          </DialogActions>
-
+        
           <div style={{
             marginTop: "10px",
             marginBottom: "15px"
@@ -787,9 +806,10 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
           marginTop: "100px"
         }}>
         <div style={{
-          margin: "15px",
+          margin: "5px",
           textAlign: "center",
-          overflow: "hidden"
+          overflow: "hidden",
+          width:"450px"
         }}>
           <DialogTitle>
             <p style={{
@@ -824,25 +844,22 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
             </DialogContentText>
 
             <TextField
-            autoFocus
-            //  sx={{ height: "80px" }}
-            //  inputProps={{ style: { fontFamily: 'nunito', color: 'navy'}}}
-              InputProps={{ sx: { height: "50px"} }}
+              autoFocus
+              //  sx={{ height: "80px" }}
+              //  inputProps={{ style: { fontFamily: 'nunito', color: 'navy'}}}
+              InputProps={{ sx: { height: "50px", color: "rgb(1, 61, 129)" } }}
               label="Mobile Number"
               variant="outlined"
               style={{
-                width: "450px",
-                fontSize: "15px"
+                width: "400px",
+              //  fontSize: "15px"
+                fontSize: "25px",
+                color: "rgb(1, 61, 129)",
               }}
             />
 
           </DialogContent>
-          <DialogActions style={{
-            width: "500px",
-            display: "flex",
-            justifyContent: "center",
-            //marginLeft: "5px"
-          }}>
+          
 
             <Button
               onClick={() => {
@@ -852,14 +869,15 @@ export const NavComponent = ({ onClick, navClass, linkClassName }) => {
               variant="contained"
               style={{
                 height: "50px",
-                width: "91%",
+               //width:"350px",
+               marginBottom:"20px",
                 backgroundColor: "rgb(1, 61, 129)"
               }}
             >
               continue
             </Button>
 
-          </DialogActions>
+          
 
         </div>
       </Dialog>

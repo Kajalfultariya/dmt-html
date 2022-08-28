@@ -48,10 +48,11 @@ const Video = () => {
                         alignItems: "center"
                     }}>
                         <div>
-                            <div className="feature-imagediv">
+                            <div width="150px" >
                                 <img
                                     src={video}
-                                    className="feature-image">
+                                    height="120px" width="120px"
+                                    style={{borderRadius:"25%"}} >
                                 </img>
                             </div>
                         </div>
